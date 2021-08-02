@@ -11,15 +11,16 @@ class ViewController: UIViewController {
     
      
     
-    @IBAction func touchDigit() {
+    @IBAction func touchedDigit(_ sender: UIButton){
+        let digit = sender.currentTitle!
+        print("touched \(digit) digit")
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    
 
 
 }
 
+ 
+ 
