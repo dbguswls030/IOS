@@ -17,32 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-KQ-Z6L" userLabel="LabelView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CxA-KQ-Z6L" userLabel="LabelView">
+                                <rect key="frame" x="20" y="250" width="374" height="572"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2le-ON-OdO">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="143"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="78.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya2-Ds-Gha" userLabel="Number Label">
-                                                <rect key="frame" x="20" y="0.0" width="374" height="143"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <rect key="frame" x="20" y="0.0" width="334" height="78.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ya2-Ds-Gha" secondAttribute="trailing" constant="20" id="5sx-Di-ee0"/>
-                                            <constraint firstItem="ya2-Ds-Gha" firstAttribute="top" secondItem="2le-ON-OdO" secondAttribute="top" id="Jex-Rh-m2n"/>
-                                            <constraint firstAttribute="bottom" secondItem="ya2-Ds-Gha" secondAttribute="bottom" id="Tfh-U1-fOE"/>
-                                            <constraint firstItem="ya2-Ds-Gha" firstAttribute="leading" secondItem="2le-ON-OdO" secondAttribute="leading" constant="20" id="nbJ-Hc-EgY"/>
+                                            <constraint firstItem="ya2-Ds-Gha" firstAttribute="top" secondItem="2le-ON-OdO" secondAttribute="top" id="I8a-x8-0He"/>
+                                            <constraint firstItem="ya2-Ds-Gha" firstAttribute="leading" secondItem="2le-ON-OdO" secondAttribute="leading" constant="20" id="Kep-MP-kGP"/>
+                                            <constraint firstAttribute="trailing" secondItem="ya2-Ds-Gha" secondAttribute="trailing" constant="20" id="dF9-83-S3B"/>
+                                            <constraint firstAttribute="bottom" secondItem="ya2-Ds-Gha" secondAttribute="bottom" id="pTa-f8-3Ri"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-g5-dwN" userLabel="AC-Div">
-                                        <rect key="frame" x="0.0" y="144" width="414" height="142.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-g5-dwN" userLabel="AC-Div">
+                                        <rect key="frame" x="0.0" y="98.5" width="374" height="79"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-Rk-FV7" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="142.5"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghr-Rk-FV7" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -54,9 +54,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2N-KK-1Zd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-2O-o65" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="104" y="0.0" width="102.5" height="142.5"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -70,7 +73,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdI-ax-9eE" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="207.5" y="0.0" width="103" height="142.5"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -91,7 +94,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxP-Lv-bqq" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="142.5"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -106,11 +109,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gt1-8i-fVU" userLabel="7-Mul">
-                                        <rect key="frame" x="0.0" y="287.5" width="414" height="143"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Gt1-8i-fVU" userLabel="7-Mul">
+                                        <rect key="frame" x="0.0" y="197.5" width="374" height="78.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3v-a2-kqh" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="143"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -122,9 +125,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA9-1f-q9T"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-7v-bGd" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="104" y="0.0" width="102.5" height="143"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -136,9 +142,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGC-SU-H3o"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-JJ-WZ5" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="207.5" y="0.0" width="103" height="143"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -150,9 +159,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnw-1d-m5R"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-Ee-6EQ" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="143"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -167,11 +179,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-uu-0ze" userLabel="4-Min">
-                                        <rect key="frame" x="0.0" y="431.5" width="414" height="143"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ss6-uu-0ze" userLabel="4-Min">
+                                        <rect key="frame" x="0.0" y="296" width="374" height="78.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnS-08-z5g" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="143"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -183,9 +195,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FK5-zD-fBu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8O-VE-EJM" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="104" y="0.0" width="102.5" height="143"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -197,9 +212,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9c-wv-hzN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyc-dH-aoH" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="207.5" y="0.0" width="103" height="143"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -211,9 +229,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Noc-08-QRU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-A7-JMh" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="143"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="78.5"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -228,11 +249,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xnm-vF-pJY" userLabel="1-Plus">
-                                        <rect key="frame" x="0.0" y="575.5" width="414" height="142.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xnm-vF-pJY" userLabel="1-Plus">
+                                        <rect key="frame" x="0.0" y="394.5" width="374" height="79"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc2-yc-4Pp" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="103" height="142.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -244,9 +265,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHD-xy-ZZl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqo-eJ-FCd" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="104" y="0.0" width="102.5" height="142.5"/>
+                                                <rect key="frame" x="98.5" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -258,9 +282,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XnN-U5-nKp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze7-aW-97V" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="207.5" y="0.0" width="103" height="142.5"/>
+                                                <rect key="frame" x="197" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -272,9 +299,12 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkh-nk-BwC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-es-rSJ" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="311.5" y="0.0" width="102.5" height="142.5"/>
+                                                <rect key="frame" x="295.5" y="0.0" width="78.5" height="79"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -289,11 +319,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="9pQ-B8-Ztc" userLabel="0-Equal">
-                                        <rect key="frame" x="0.0" y="719" width="414" height="143"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9pQ-B8-Ztc" userLabel="0-Equal">
+                                        <rect key="frame" x="0.0" y="493.5" width="374" height="78.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpV-XB-Jh3" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="206.5" height="143"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="78.5"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
@@ -305,12 +335,15 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eH-Rn-NCn"/>
+                                                </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-Sn-irf">
-                                                <rect key="frame" x="207.5" y="0.0" width="206.5" height="143"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-Sn-irf">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="78.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="826-c1-xUc" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="143"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="78.5" height="78.5"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -322,9 +355,12 @@
                                                                 <real key="value" value="40"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1y-O5-9bO"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z8-Ea-DkI" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
-                                                        <rect key="frame" x="104" y="0.0" width="102.5" height="143"/>
+                                                        <rect key="frame" x="98.5" y="0.0" width="78.5" height="78.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Button"/>
@@ -347,16 +383,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="CxA-KQ-Z6L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FE6-2g-OWd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CxA-KQ-Z6L" secondAttribute="trailing" id="Ub8-g1-SLv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CxA-KQ-Z6L" secondAttribute="bottom" id="ehK-wV-wai"/>
-                            <constraint firstItem="CxA-KQ-Z6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mnj-mQ-Ysd"/>
+                            <constraint firstItem="CxA-KQ-Z6L" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="250" id="FE6-2g-OWd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CxA-KQ-Z6L" secondAttribute="trailing" constant="20" id="Ub8-g1-SLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CxA-KQ-Z6L" secondAttribute="bottom" constant="40" id="ehK-wV-wai"/>
+                            <constraint firstItem="CxA-KQ-Z6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mnj-mQ-Ysd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="ya2-Ds-Gha" id="aKK-kS-S1B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43.478260869565219" y="51.5625"/>
+            <point key="canvasLocation" x="-312" y="114"/>
         </scene>
     </scenes>
     <designables>

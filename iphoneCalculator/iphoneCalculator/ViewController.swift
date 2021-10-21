@@ -14,8 +14,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var numberLabel: UILabel!
+    
 
-
+    @IBAction func clearButton(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func buttonCliked(_ sender: UIButton){
+        if numberLabel.text! == "0"{
+            numberLabel.text = sender.currentTitle!
+        }else{
+            numberLabel.text! += sender.currentTitle!
+        }
+        
+    }
 }
 
-//asd
+
