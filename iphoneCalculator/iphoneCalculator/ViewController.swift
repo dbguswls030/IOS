@@ -8,27 +8,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    // Struct with our data and functions for
+    // working with that data
+    var calculator = Calculator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var numberLabel: UILabel!
-    
+    @IBAction func clearClicked(_ sender: UIButton) {
+        numberLabel.text = calculator.clearButtonClicked()
+    }
+    @IBAction func numberClicked(_ sender: UIButton) {
+        
+        //print(type(of: String(sender.titleLabel!.text!)))
+        //print(sender.currentTitle!)
+        numberLabel.text = calculator.numberButtonClicked(String(sender.titleLabel!.text!))
+        
+    }
+    @IBAction func signClicked(_ sender: UIButton) {
+        numberLabel.text = calculator.signButtonClicked(numberLabel.text ?? "0")
+    }
+    @IBAction func percentClicked(_ sender: UIButton) {
+        numberLabel.text = calculator.percentButtonClicked(numberLabel.text ?? "0")
+    }
+    @IBAction func mathButtonClicked(_ sender: UIButton) {
+        calculator.mathButtonClicked(String(sender.titleLabel!.text!))
+        //print(sender.currentTitle!)
+    }
+    @IBAction func equalClicked(_ sender: UIButton) {
+        numberLabel.text = calculator.equalButtonClicked()
+    }
 
-    @IBAction func clearButton(_ sender: UIButton) {
-        
-    }
-    
-    @IBAction func buttonCliked(_ sender: UIButton){
-        if numberLabel.text! == "0"{
-            numberLabel.text = sender.currentTitle!
-        }else{
-            numberLabel.text! += sender.currentTitle!
-        }
-        
-    }
 }
 
 

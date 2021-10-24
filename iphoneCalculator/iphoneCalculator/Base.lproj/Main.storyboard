@@ -23,7 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2le-ON-OdO">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="78.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ya2-Ds-Gha" userLabel="Number Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ya2-Ds-Gha" userLabel="Number Label">
                                                 <rect key="frame" x="20" y="0.0" width="334" height="78.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="80"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,7 +55,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2N-KK-1Zd"/>
+                                                    <action selector="clearClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6A-PT-zL8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGn-2O-o65" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -71,6 +71,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="signClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdd-nH-uCV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdI-ax-9eE" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="197" y="0.0" width="78.5" height="79"/>
@@ -81,7 +84,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="％">
                                                             <attributes>
-                                                                <font key="NSFont" size="40" name=".AppleSDGothicNeoI-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="40"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -92,6 +95,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="percentClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uxw-Vv-Zgt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxP-Lv-bqq" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
                                                 <rect key="frame" x="295.5" y="0.0" width="78.5" height="79"/>
@@ -106,6 +112,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A6a-y8-aTo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -126,7 +135,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gA9-1f-q9T"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnD-4K-DwG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-7v-bGd" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -143,7 +152,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGC-SU-H3o"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gdc-Ia-5v6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wT-JJ-WZ5" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -160,7 +169,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fnw-1d-m5R"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhT-nk-47o"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrp-Ee-6EQ" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -176,6 +185,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lml-1O-cjm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -196,7 +208,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FK5-zD-fBu"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ooj-Fs-yxS"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8O-VE-EJM" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -213,7 +225,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9c-wv-hzN"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0A-5u-glL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyc-dH-aoH" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -230,7 +242,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Noc-08-QRU"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9S-PT-1GZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft0-A7-JMh" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -246,6 +258,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqn-Z7-psw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -266,7 +281,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHD-xy-ZZl"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5m5-AW-mGl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqo-eJ-FCd" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -283,7 +298,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XnN-U5-nKp"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8k-sx-o20"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ze7-aW-97V" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -300,7 +315,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fkh-nk-BwC"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dsc-ah-DAg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUA-es-rSJ" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -316,6 +331,9 @@
                                                         <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="mathButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jls-bg-dsv"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -336,7 +354,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eH-Rn-NCn"/>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ky-MC-FfX"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-Sn-irf">
@@ -356,7 +374,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="buttonCliked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1y-O5-9bO"/>
+                                                            <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzH-Ua-MCa"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5z8-Ea-DkI" customClass="RoundButton" customModule="iphoneCalculator" customModuleProvider="target">
@@ -372,6 +390,9 @@
                                                                 <real key="value" value="40"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="equalClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Vk-ck-Nzv"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -395,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="114"/>
+            <point key="canvasLocation" x="262" y="125"/>
         </scene>
     </scenes>
     <designables>
@@ -433,7 +454,7 @@
             <size key="intrinsicContentSize" width="78" height="62"/>
         </designable>
         <designable name="VdI-ax-9eE">
-            <size key="intrinsicContentSize" width="64" height="58.5"/>
+            <size key="intrinsicContentSize" width="64.5" height="62"/>
         </designable>
         <designable name="Ze7-aW-97V">
             <size key="intrinsicContentSize" width="48.5" height="62"/>
